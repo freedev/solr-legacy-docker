@@ -1,11 +1,11 @@
 solr-legacy
 ===========
 
-This project aims to help developers and newbies that would try an old version of Solr (pre ver. 5.0) in a Docker Environment 
+This project aims to help developers and newbies that would try an old version of Solr (pre ver. 5.0) in a Docker environment 
 
 ### Prerequisite for the installation
 
- * [install Docker lastest](https://docs.docker.com/engine/installation/) version or Docker for Desktop
+ * [install Docker](https://docs.docker.com/engine/installation/) latest version or Docker for Desktop
 
 ### Quick start
 
