@@ -2,10 +2,6 @@
 
 set -e
 
-mantainer_name=freedev
-container_name=solr-jetty
-
-
 function my_readlink() {
   case "$OSTYPE" in
     solaris*) echo "SOLARIS" ;;
@@ -27,6 +23,8 @@ SCRIPT_NAME=$(basename "$0")
 SCRIPT_DIR=$(dirname $SCRIPT_PATH)
 
 SZD_HOME=$SCRIPT_PATH
+
+source $SZD_HOME/config/common.sh
 
 [ -z "$SZD_HOME" ] && echo "ERROR: "\$SZD_HOME" environment variable not found!" && exit 1;
 
@@ -61,8 +59,6 @@ then
         exit 1
 fi
 
-SOLR_HOSTNAME=solr-jetty-1
-SOLR_PORT=8080
 HOST_DATA_DIR=$SZD_DATA_DIR/${SOLR_HOSTNAME}
 
 if [ ! -f ${HOST_DATA_DIR}/store/logs ] ; then
