@@ -25,7 +25,9 @@ Just copy you core into the directory
 
 ### Choose the Solr Version
 
-Just modify the `build.sh` file changing the `SOLR_VERSION` environment variable accordingly to the version you need
+Just modify the `config/common.sh` file changing the `SOLR_VERSION` environment variable accordingly to the version you need:
 
     export SOLR_VERSION=4.7.0
+
+And run the `build-images.sh` script again
 
