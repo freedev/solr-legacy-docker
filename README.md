@@ -1,5 +1,5 @@
-solr-legacy
-===========
+solr-legacy-docker
+==================
 
 This project aims to help developers and newbies that would try an old version of Solr (pre ver. 5.0) in a Docker environment 
 
