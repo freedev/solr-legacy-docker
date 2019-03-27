@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export SOLR_VERSION=4.7.0
+
 mantainer_name=freedev
 
 DOCKER_BIN=docker

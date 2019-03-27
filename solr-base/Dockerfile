@@ -2,7 +2,7 @@ FROM freedev/unix-utils
 
 MAINTAINER Vincenzo D'Amore <v.damore@gmail.com>
 
-ENV SOLR_VERSION 4.7.0
+ENV SOLR_VERSION $SOLR_VERSION
 
 ENV SOLR_HOME /var/lib/solr
 
