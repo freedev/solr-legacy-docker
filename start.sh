@@ -65,8 +65,11 @@ SOLR_HOSTNAME=solr-jetty-1
 SOLR_PORT=8080
 HOST_DATA_DIR=$SZD_DATA_DIR/${SOLR_HOSTNAME}
 
-if [ ! -d ${HOST_DATA_DIR} ] ; then
+if [ ! -f ${HOST_DATA_DIR}/store/logs ] ; then
     mkdir -p ${HOST_DATA_DIR}/store/logs
+fi
+
+if [ ! -f ${HOST_DATA_DIR}/store/solr/solr.xml ] ; then
     mkdir -p ${HOST_DATA_DIR}/store/solr
     cp $SZD_HOME/config/solr.xml ${HOST_DATA_DIR}/store/solr
 fi
