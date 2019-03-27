@@ -18,7 +18,7 @@ If you want start Solr 4.7.0 in a container start with:
 
 ### Add your own solr core/collection 
 
-Just copy you core into the directory
+Just copy your core into the directory
 
     data/solr-jetty-1/store/solr
 
