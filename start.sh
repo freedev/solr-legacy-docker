@@ -81,7 +81,7 @@ container_id=$(  $DOCKER_BIN run -d \
 	-e SOLR_DATA=/store/solr \
 	-e SOLR_LOG_DIR=/store/logs \
 	-v "$HOST_DATA_DIR/store:/store" \
-	-p ${SOLR_PORT}:${SOLR_PORT} \
+	-p ${SOLR_PORT}:8080 \
 	--name "${SOLR_HOSTNAME}" \
 	${mantainer_name}/${container_name} java -jar /usr/local/jetty/start.jar )
 
